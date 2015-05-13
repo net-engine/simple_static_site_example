@@ -1,47 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>http://netengine.com.au/blog/tags/test2/</loc>
+    <loc>http://net-engine.github.io/simple_static_site_example/blog/tags/test2/</loc>
     <lastmod>2015-05-13</lastmod>
   </url>
   <url>
-    <loc>http://netengine.com.au/blog/tags/test3/</loc>
+    <loc>http://net-engine.github.io/simple_static_site_example/blog/tags/test3/</loc>
     <lastmod>2015-05-13</lastmod>
   </url>
   <url>
-    <loc>http://netengine.com.au/blog/</loc>
+    <loc>http://net-engine.github.io/simple_static_site_example/blog/</loc>
     <lastmod>2015-05-13</lastmod>
   </url>
   <url>
-    <loc>http://netengine.com.au/contact/</loc>
+    <loc>http://net-engine.github.io/simple_static_site_example/contact/</loc>
     <lastmod>2015-05-13</lastmod>
   </url>
   <url>
-    <loc>http://netengine.com.au/</loc>
+    <loc>http://net-engine.github.io/simple_static_site_example/</loc>
     <lastmod>2015-05-13</lastmod>
   </url>
   <url>
-    <loc>http://netengine.com.au/blog/tags/test/</loc>
+    <loc>http://net-engine.github.io/simple_static_site_example/blog/tags/test/</loc>
     <lastmod>2015-05-13</lastmod>
   </url>
   <url>
-    <loc>http://netengine.com.au/about/</loc>
+    <loc>http://net-engine.github.io/simple_static_site_example/about/</loc>
     <lastmod>2015-05-13</lastmod>
   </url>
   <url>
-    <loc>http://netengine.com.au/blog/another-blog-post/</loc>
+    <loc>http://net-engine.github.io/simple_static_site_example/blog/another-blog-post/</loc>
     <lastmod>2015-05-13</lastmod>
   </url>
   <url>
-    <loc>http://netengine.com.au/blog/test-blog-post/</loc>
+    <loc>http://net-engine.github.io/simple_static_site_example/blog/test-blog-post/</loc>
     <lastmod>2015-05-13</lastmod>
   </url>
   <url>
-    <loc>http://netengine.com.au/blog/archive/2015/03/</loc>
+    <loc>http://net-engine.github.io/simple_static_site_example/blog/archive/2015/03/</loc>
     <lastmod>2015-05-13</lastmod>
   </url>
   <url>
-    <loc>http://netengine.com.au/blog/archive/2015/04/</loc>
+    <loc>http://net-engine.github.io/simple_static_site_example/blog/archive/2015/04/</loc>
     <lastmod>2015-05-13</lastmod>
   </url>
 </urlset>
