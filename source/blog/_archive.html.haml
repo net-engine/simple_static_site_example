@@ -1,0 +1,8 @@
+- if @archive_months.any?
+  .archive
+    %label Archive
+
+    %ul.no-dot
+      - @archive_months.each do |date_string|
+        - date = Date.parse(date_string)
+        %li= link_to date_string, "/blog/archive/#{date.strftime("%Y")}/#{date.strftime("%m")}"

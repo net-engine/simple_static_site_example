@@ -1,0 +1,17 @@
+- content_for :page_title, "#{@title}"
+
+- if @image && @image.url.present?
+  .blog-header{ style: "background-image: url(#{@image.url}?w=1200&h=300&fit=thumb);" }
+
+.row
+  .column.two-thirds
+    .body= Markdown.new(@body).to_html
+    .tags
+      %h3 Related tags
+      - @tags.each do |tag|
+        = link_to tag, "/blog/tags/#{tag}", class: 'related-tag'
+
+  .column.one-third.sidebar
+    = partial "blog/recent_posts"
+    = partial "blog/archive"
+    = partial "blog/tags"

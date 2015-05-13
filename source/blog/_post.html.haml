@@ -1,0 +1,6 @@
+- post_data = post[1]
+
+= link_to "/blog/#{post_data[:slug]}", class: 'column one-half' do
+  - if post_data[:image] && post_data[:image][:url].present?
+    = image_tag "#{post_data[:image][:url]}?w=500&h=500&fit=thumb", class: 'feature-image'
+  %h5.post-title= post_data[:title]

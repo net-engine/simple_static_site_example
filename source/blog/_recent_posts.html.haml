@@ -1,0 +1,7 @@
+- if @recent_posts.any?
+  .archive
+    %label Recent Posts
+
+    %ul.no-dot
+      - @recent_posts.each do |post|
+        %li= link_to post[1][:title], "/blog/#{post[1][:slug]}", class: @post && @post[:slug] == post[1][:slug] ? 'active' : nil

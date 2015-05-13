@@ -1,0 +1,22 @@
+---
+title: "Get in touch"
+---
+
+
+%form{ action: "//formspree.io/your@email.com", method: "POST" }
+  %input{ type: "hidden", name: "_subject", value: "New contact enquiry!" }
+  %input{ type: "text", name: "_gotcha", style: "display: none;" }
+
+  .row
+    .six.columns
+      %label{ for: "email_input"} Your name
+      %input#name_input.u-full-width{ name: 'name', type: "text", placeholder: "Joe Bloggs" }
+
+    .six.columns
+      %label{ for: "email_input"} Your email
+      %input#email_input.u-full-width{ name: 'email', type: "email", placeholder: "joe.bloggs@example.com" }
+
+  %label{ for: "message_input" } Message
+  %textarea#message_input.u-full-width{ name: 'message', placeholder: "Your message..." }
+
+  %button.button-primary{ type: "submit" } Submit

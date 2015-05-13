@@ -1,0 +1,42 @@
+!!!
+%html
+  %head
+    %meta{ charset: 'utf-8' }
+    %meta{ content: "IE=edge,chrome=1", "http-equiv" => "X-UA-Compatible" }
+    %meta{ name: "viewport", content: "width=device-width" }
+
+    %title= content_for?(:page_title) ? yield_content(:page_title) : current_page.data.title
+
+    %meta{ property:"og:type", content: "website" }
+
+    = favicon_tag 'favicon.png'
+
+    = stylesheet_link_tag "//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css", "//cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"
+
+    = stylesheet_link_tag "site"
+    = javascript_include_tag "site"
+
+    /[if lt IE 9]
+      = javascript_include_tag "//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"
+
+  %body{ class: page_classes }
+
+    %header.header
+      .container
+        = link_to '/', class: 'logo' do
+          = image_tag 'favicon.png', title: "A simple static site example"
+          %span A simple static site example
+
+        = partial "layouts/nav"
+
+    #main.main
+      .container
+        %h1.page-title= content_for?(:page_title) ? yield_content(:page_title) : current_page.data.title
+
+        = yield
+
+    %footer.footer
+      .container
+        = partial "layouts/nav"
+
+        %small= "&copy; #{Time.now.year}".html_safe

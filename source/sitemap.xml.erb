@@ -1,0 +1,15 @@
+<% base_url = "http://net-engine.github.io/simple_static_site_example/" %>
+<% resources = sitemap.resources.reject { |r| r.is_a? Middleman::Sitemap::Extensions::Redirects::RedirectResource } %>
+<% pages = resources.find_all { |p| p.source_file.present? && p.source_file.match(/\.html/) } %>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<% pages.each do |p| %>
+  <url>
+    <loc><%= base_url + p.destination_path.gsub('index.html','') %></loc>
+    <% if priority = p.metadata[:page]['priority'] %>
+      <priority><%= priority %> </priority>
+    <% end %>
+    <lastmod><%= File.new(p.source_file).mtime.to_date %></lastmod>
+  </url>
+<% end %>
+</urlset>

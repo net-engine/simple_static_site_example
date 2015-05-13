@@ -1,0 +1,12 @@
+- content_for :page_title, "Tag - #{@tag}"
+
+.row
+  .column.two-thirds
+    .row
+      - @tag_posts.each do |post|
+        = partial "blog/post", locals: { post: post }
+
+  .column.one-third.sidebar
+    = partial "blog/recent_posts"
+    = partial "blog/archive"
+    = partial "blog/tags"

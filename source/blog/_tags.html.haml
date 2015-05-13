@@ -1,0 +1,6 @@
+- if @all_tags.any?
+  .archive
+    %label Tags
+
+    - @all_tags.each do |tag|
+      = link_to tag, "/blog/tags/#{tag}", class: "related-tag#{@tag && @tag == tag ? ' active' : nil}"

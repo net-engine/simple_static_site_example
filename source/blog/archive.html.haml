@@ -1,0 +1,12 @@
+- content_for :page_title, "Archive - #{@date}"
+
+.row
+  .column.two-thirds
+    .row
+      - @archive_posts.each do |post|
+        = partial "blog/post", locals: { post: post }
+
+  .column.one-third.sidebar
+    = partial "blog/recent_posts"
+    = partial "blog/archive"
+    = partial "blog/tags"

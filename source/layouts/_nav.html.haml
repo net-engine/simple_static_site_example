@@ -1,0 +1,5 @@
+%nav.nav
+  = menu_link 'Blog', 'blog'
+  - data.site.page.each do |page|
+    = menu_link page[1][:title], page[1][:slug].downcase
+  = menu_link 'Contact', 'contact'

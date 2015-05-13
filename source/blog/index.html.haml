@@ -1,0 +1,15 @@
+---
+title: "Latest posts"
+description: "Latest blog posts"
+---
+
+.row
+  .column.two-thirds
+    .row
+      - data.site.blog_post.each do |post|
+        = partial "blog/post", locals: { post: post }
+
+  .column.one-third.sidebar
+    = partial "blog/recent_posts"
+    = partial "blog/archive"
+    = partial "blog/tags"
